@@ -17,7 +17,7 @@ public class CraftingRecipeCreator : MonoBehaviour
     /// </summary>
     public void CreateAllRecipes()
     {
-        if (itemDatabase == null || craftingDatabase == null)
+        if (craftingDatabase == null)
         {
             Debug.LogError("数据库未设置！");
             return;
