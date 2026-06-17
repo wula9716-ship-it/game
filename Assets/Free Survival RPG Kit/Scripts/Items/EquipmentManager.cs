@@ -12,7 +12,7 @@ public class EquipmentManager : MonoBehaviour {
 	public static EquipmentManager instance {
 		get {
 			if (_instance == null) {
-				_instance = FindObjectOfType<EquipmentManager> ();
+				_instance = FindAnyObjectByType<EquipmentManager> ();
 			}
 			return _instance;
 		}

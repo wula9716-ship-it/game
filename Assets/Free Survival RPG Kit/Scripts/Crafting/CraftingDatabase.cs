@@ -87,7 +87,7 @@ public class CraftingDatabase : ScriptableObject
 
             if (recipeDictionary != null && recipe.resultItem != null)
             {
-                recipeDictionary.TryAdd(recipe.resultItem.itemName, recipe);
+                recipeDictionary.TryAdd(recipe.resultItem.name, recipe);
             }
         }
     }
@@ -103,7 +103,7 @@ public class CraftingDatabase : ScriptableObject
 
             if (recipeDictionary != null && recipe.resultItem != null)
             {
-                recipeDictionary.Remove(recipe.resultItem.itemName);
+                recipeDictionary.Remove(recipe.resultItem.name);
             }
         }
     }

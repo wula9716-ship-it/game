@@ -75,7 +75,7 @@ public class Building : MonoBehaviour, IInteractable
             weatherDamageTimer = 0f;
 
             // 获取天气系统
-            WeatherSystem weatherSystem = FindFirstObjectByType<WeatherSystem>();
+            WeatherSystem weatherSystem = FindAnyObjectByType<WeatherSystem>();
             if (weatherSystem != null)
             {
                 float damage = weatherSystem.GetWeatherDamage() * weatherDamageRate;
